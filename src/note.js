@@ -1,5 +1,3 @@
-
-
 (function(exports) {
   function Note(note) {
     this.text = note;
