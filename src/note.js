@@ -1,6 +1,6 @@
 (function(exports) {
-  function Note(note) {
-    this.text = note;
+  function Note(text = '') {
+    this.text = text;
 
     Note.prototype.viewNote = function() {
       return this.text;

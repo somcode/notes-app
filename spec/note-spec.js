@@ -22,16 +22,22 @@
 //
 // })(this);
 
-
-function testNoteReturnNote() {
-  var note = new Note("hello");
-  assert.isTrue(note.text === "hello");
+function testNoteIsEmptyByDefault() {
+  var note = new Note();
+  assert.isEmpty("it is empty note", note.text === '');
 };
-testNoteReturnNote();
+testNoteIsEmptyByDefault();
+
+
+function testCreateNote() {
+  var note = new Note("hello");
+  assert.isTrue("note was created", note.text === "hello");
+};
+testCreateNote();
 
 
 function testViewNoteReturnNote() {
   var note = new Note("hello world");
-  assert.isTrue(note.viewNote() === "hello world")
+  assert.isTrue("it is returning note", note.viewNote() === "hello world")
 };
 testViewNoteReturnNote();
