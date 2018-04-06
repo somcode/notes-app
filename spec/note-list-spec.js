@@ -27,6 +27,6 @@ testGetNoteIsReturningNoteList();
 function testCreateAndStoreNewNote() {
   note_list = new NoteList();
   note_list.createAndStore('javascript');
-  assert.isTrue("create and store notes", note_list.getNoteFromList()[0].viewNote() === "javascript");
+  assert.isTrue("create and store notes", note_list.createAndStore('javascript')[0].text === "javascript");
 };
 testCreateAndStoreNewNote();

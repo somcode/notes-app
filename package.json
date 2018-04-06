@@ -1,0 +1,23 @@
+{
+  "name": "notes-app",
+  "version": "1.0.0",
+  "description": "frontend single page javascript app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/somcode/notes-app.git"
+  },
+  "author": "somayeh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/somcode/notes-app/issues"
+  },
+  "homepage": "https://github.com/somcode/notes-app#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
+}

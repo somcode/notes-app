@@ -1,16 +1,14 @@
-(function(exports) {
-  function NoteListView(notes = '') {
-    this.notelist = [notes];
-
-    NoteListView.prototype.viewNoteList = function() {
-      var string = "";
-       for (i = 0; i < this.notelist.length; i++) {
-        string += "<li><div>" + this.notelist[i] + "</div></li>";
-      }
-       return string;
-
-    };
+(function(exports){
+  function NoteListView(noteList = []) {
+    this.notelist = noteList;
   };
 
+  NoteListView.prototype.viewHtmlNotesList = function () {
+
+  return "<ul>" + this.notelist.map(function(note) {
+    return ("<li><div>" + note.text + "</div></li>")
+  }).join('') + "</ul>"
+
+  };
   exports.NoteListView = NoteListView;
 })(this);

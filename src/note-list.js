@@ -14,6 +14,7 @@
    NoteList.prototype.createAndStore = function(string) {
      var note = new Note(string);
      this.addNoteToList(note);
+     return this.getNoteFromList();
    };
 
   };
